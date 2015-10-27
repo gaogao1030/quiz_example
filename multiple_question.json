@@ -1,0 +1,33 @@
+{
+  "id": 1190008,
+  "is_true": false,
+  "need_explanation": null,
+  "is_marked": false,
+  "is_answered": false,
+  "title": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span>三角形</span><span>ABC</span><span>中，角</span><span>A=25</span><span>度，角</span><span>B</span><span>大于</span><span>90</span><span>度，则角</span><span>C</span><span>可能的度数是？</span></p>    ",
+  "score": 0,
+  "question_type_id": 2,
+  "answers": [
+    {
+      "id": 64339,
+      "content": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span style=\"\">70</span><span><span style=\"white-space:pre-wrap;\"> </span></span><span style=\"\"><span style=\"white-space:pre-wrap;\"> </span></span><span><span style=\"white-space:pre-wrap;\"> </span></span></p>    "
+    },
+    {
+      "id": 64340,
+      "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>12</span><span><span style=\"white-space:pre-wrap;\">  </span></span></p>    "
+    },
+    {
+      "id": 64341,
+      "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>15</span><span><span style=\"white-space:pre-wrap;\">  </span></span></p>    "
+    },
+    {
+      "id": 64342,
+      "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>45</span><span><span style=\"white-space:pre-wrap;\">  </span></span></p>    "
+    },
+    {
+      "id": 64343,
+      "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>50</span></p>    "
+    }
+  ],
+  "your_answers": []
+}
