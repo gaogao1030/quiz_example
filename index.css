@@ -1,0 +1,13 @@
+body {
+  font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simhei,"黑体";
+}
+
+.title img {max-width:100% !important; height: auto !important;}
+ol {padding:0;list-style-type:upper-alpha;list-style-position: inside;}
+ol > li {padding-left:50px;position:relative;}
+.iradio_flat-blue {
+  position: absolute !important;
+  left: 20px;
+  top: 8px;
+}
+

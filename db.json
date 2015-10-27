@@ -1,0 +1,289 @@
+{
+  "id": 167822,
+  "is_finished": false,
+  "start": null,
+  "test_questions": [
+    {
+      "id": 1190007,
+      "is_true": false,
+      "need_explanation": null,
+      "is_marked": false,
+      "is_answered": false,
+      "title": "    <p style=\"; line-height: 2em;\">给定函数：<span>①</span>$y=\\sqrt{x}$，<span>②</span>$y={{\\log }_{\\tfrac{1}{2}}}\\left( x+1 \\right)$，<span>③</span>$y=\\left| x-1 \\right|$，<span>④</span>$y={{2}^{x+1}}$，其中在区间(0,1)上单调<img height=\"397\" id=\"rId8\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage1.png\" style=\"width:452pt;height:397.35pt\" width=\"452\">递减的函数<img height=\"322\" id=\"rId9\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage2.png\" style=\"width:455.35pt;height:322pt\" width=\"455\">的序号是</p>    <p style=\"; line-height: 2em;\"><span><img height=\"12\" id=\"rId10\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage3.png\" style=\"width:31.35pt;height:12pt\" width=\"31\"></span><span><span style=\"white-space:pre-wrap;\"> </span></span><span>a</span><span style=\"\">∈</span><span>b</span><span style=\"\"><img height=\"14\" id=\"rId12\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage4.png\" style=\"width:33.35pt;height:14pt\" width=\"33\"></span></p>    ",
+      "score": 0,
+      "question_type_id": 1,
+      "answers": [
+        {
+          "id": 64335,
+          "content": "    <p style=\"; line-height: 2em;\"><span>②③</span></p>    "
+        },
+        {
+          "id": 64336,
+          "content": "    <p style=\"; line-height: 2em;\"><span>①②</span></p>    "
+        },
+        {
+          "id": 64337,
+          "content": "    <p style=\"; line-height: 2em;\"><span>③④</span></p>    "
+        },
+        {
+          "id": 64338,
+          "content": "    <p style=\"; line-height: 2em;\"><span>①④</span></p>    "
+        }
+      ],
+      "your_answers": []
+    },
+    {
+      "id": 1190008,
+      "is_true": false,
+      "need_explanation": null,
+      "is_marked": false,
+      "is_answered": false,
+      "title": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span>三角形</span><span>ABC</span><span>中，角</span><span>A=25</span><span>度，角</span><span>B</span><span>大于</span><span>90</span><span>度，则角</span><span>C</span><span>可能的度数是？</span></p>    ",
+      "score": 0,
+      "question_type_id": 2,
+      "answers": [
+        {
+          "id": 64339,
+          "content": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span style=\"\">70</span><span><span style=\"white-space:pre-wrap;\"> </span></span><span style=\"\"><span style=\"white-space:pre-wrap;\"> </span></span><span><span style=\"white-space:pre-wrap;\"> </span></span></p>    "
+        },
+        {
+          "id": 64340,
+          "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>12</span><span><span style=\"white-space:pre-wrap;\">  </span></span></p>    "
+        },
+        {
+          "id": 64341,
+          "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>15</span><span><span style=\"white-space:pre-wrap;\">  </span></span></p>    "
+        },
+        {
+          "id": 64342,
+          "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>45</span><span><span style=\"white-space:pre-wrap;\">  </span></span></p>    "
+        },
+        {
+          "id": 64343,
+          "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>50</span></p>    "
+        }
+      ],
+      "your_answers": []
+    },
+    {
+      "id": 1190009,
+      "is_true": false,
+      "need_explanation": null,
+      "is_marked": false,
+      "is_answered": false,
+      "title": "    <p style=\"; line-height: 2em;\">下列函数中，既是偶函数又在(0<span>,</span>＋∞)单调递增的函数是</p>    ",
+      "score": 0,
+      "question_type_id": 1,
+      "answers": [
+        {
+          "id": 64344,
+          "content": "    <p style=\"; line-height: 2em;\">$y=\\left| x \\right|+1$<span>.</span></p>    "
+        },
+        {
+          "id": 64345,
+          "content": "    <p style=\"; line-height: 2em;\">$y={{x}^{3}}$</p>    "
+        },
+        {
+          "id": 64346,
+          "content": "    <p style=\"; line-height: 2em;\">$y=-{{x}^{2}}+1$</p>    "
+        },
+        {
+          "id": 64347,
+          "content": "    <p style=\"; line-height: 2em;\">$y={{2}^{-\\left| x \\right|}}$</p>    "
+        }
+      ],
+      "your_answers": []
+    },
+    {
+      "id": 1190010,
+      "is_true": false,
+      "need_explanation": null,
+      "is_marked": false,
+      "is_answered": false,
+      "title": "    <p style=\"; line-height: 2em;\">函数$f(x)=1-\\frac{1}{x}$在[3,4]上</p>    ",
+      "score": 0,
+      "question_type_id": 1,
+      "answers": [
+        {
+          "id": 64348,
+          "content": "    <p style=\"; line-height: 2em;\">有最小值无最大值<span>.</span></p>    "
+        },
+        {
+          "id": 64349,
+          "content": "    <p style=\"; line-height: 2em;\">有最大值无最小值</p>    "
+        },
+        {
+          "id": 64350,
+          "content": "    <p style=\"; line-height: 2em;\">既有最大值又有最小值</p>    "
+        },
+        {
+          "id": 64351,
+          "content": "    <p style=\"; line-height: 2em;\"><span>最大值和最小值都不存在</span></p>    "
+        }
+      ],
+      "your_answers": []
+    },
+    {
+      "id": 1190011,
+      "is_true": false,
+      "need_explanation": null,
+      "is_marked": false,
+      "is_answered": false,
+      "title": "    <p style=\"; line-height: 2em;\">若函数y＝ax与$y=-\\frac{b}{x}$在(0<span>,</span>＋∞)上都是减函数，则$y=a{{x}^{2}}+bx$在(<span>0,</span>＋∞)上是</p>    ",
+      "score": 0,
+      "question_type_id": 1,
+      "answers": [
+        {
+          "id": 64352,
+          "content": "    <p style=\"; line-height: 2em;\">减函数<span>.</span></p>    "
+        },
+        {
+          "id": 64353,
+          "content": "    <p style=\"; line-height: 2em;\">增函数</p>    "
+        },
+        {
+          "id": 64354,
+          "content": "    <p style=\"; line-height: 2em;\">先增后减</p>    "
+        },
+        {
+          "id": 64355,
+          "content": "    <p style=\"; line-height: 2em;\">先减后增</p>    "
+        }
+      ],
+      "your_answers": []
+    },
+    {
+      "id": 1190012,
+      "is_true": false,
+      "need_explanation": null,
+      "is_marked": false,
+      "is_answered": false,
+      "title": "    <p style=\"; line-height: 2em;\">函数$f\\left( x \\right)=\\ln (4+3x-{{x}^{2}})$的单调递减区间是</p>    ",
+      "score": 0,
+      "question_type_id": 1,
+      "answers": [
+        {
+          "id": 64356,
+          "content": "    <p style=\"; line-height: 2em;\">$[\\frac{3}{2},4]$<span>.</span></p>    "
+        },
+        {
+          "id": 64357,
+          "content": "    <p style=\"; line-height: 2em;\">$(-\\infty ,\\frac{3}{2})$</p>    "
+        },
+        {
+          "id": 64358,
+          "content": "    <p style=\"; line-height: 2em;\">$[\\frac{3}{2},+\\infty ]$</p>    "
+        },
+        {
+          "id": 64359,
+          "content": "    <p style=\"; line-height: 2em;\">$(-1,\\frac{3}{2})$</p>    "
+        }
+      ],
+      "your_answers": []
+    },
+    {
+      "id": 1190013,
+      "is_true": false,
+      "need_explanation": null,
+      "is_marked": false,
+      "is_answered": false,
+      "title": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span>五边形的内角和为</span><span>450</span><span>度。</span></p>    ",
+      "score": 0,
+      "question_type_id": 6,
+      "answers": [],
+      "your_answers": [
+        ""
+      ]
+    },
+    {
+      "id": 1190014,
+      "is_true": false,
+      "need_explanation": null,
+      "is_marked": false,
+      "is_answered": false,
+      "title": "    <p style=\"; line-height: 2em;\">已知函数f(x)在定义域(－1,1)内单调递减，则满足<img height=\"19\" id=\"rId15\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage6.png\" style=\"width:94.65pt;height:19.35pt\" width=\"95\">的实数a的取值范围为<span>(0,</span>_____<span>)</span>．</p>    ",
+      "score": 0,
+      "question_type_id": 3,
+      "answers": [],
+      "your_answers": [
+        ""
+      ]
+    },
+    {
+      "id": 1190015,
+      "is_true": false,
+      "need_explanation": null,
+      "is_marked": false,
+      "is_answered": true,
+      "title": "    <p style=\"; line-height: 2em;\">已知函数f(x)在定义域(－1,1)内单调递减，则满足<img height=\"19\" id=\"rId17\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage8.png\" style=\"width:94.65pt;height:19.35pt\" width=\"95\">的实数a的取值范围为<span>(0,</span>_____<span>)</span>．</p>    ",
+      "score": 0,
+      "question_type_id": 5,
+      "answers": [],
+      "your_answers": [],
+      "children": [
+        {
+          "id": 1190016,
+          "is_true": false,
+          "need_explanation": null,
+          "is_marked": false,
+          "is_answered": false,
+          "title": "",
+          "score": 0,
+          "question_type_id": 1,
+          "answers": [
+            {
+              "id": 64362,
+              "content": "    <p style=\"; line-height: 2em;\">$[\\frac{3}{2},4]$<span>.</span></p>    "
+            },
+            {
+              "id": 64363,
+              "content": "    <p style=\"; line-height: 2em;\">$(-\\infty ,\\frac{3}{2})$</p>    "
+            },
+            {
+              "id": 64364,
+              "content": "    <p style=\"; line-height: 2em;\">$[\\frac{3}{2},+\\infty ]$</p>    "
+            },
+            {
+              "id": 64365,
+              "content": "    <p style=\"; line-height: 2em;\">$(-1,\\frac{3}{2})$</p>    "
+            }
+          ],
+          "your_answers": []
+        },
+        {
+          "id": 1190017,
+          "is_true": false,
+          "need_explanation": null,
+          "is_marked": false,
+          "is_answered": false,
+          "title": "    <p style=\"; line-height: 2em;\">函数$f\\left( x \\right)=\\ln (4+3x-{{x}^{2}})$的单调递减区间是</p>    ",
+          "score": 0,
+          "question_type_id": 1,
+          "answers": [
+            {
+              "id": 64366,
+              "content": "    <p style=\"; line-height: 2em;\">$[\\frac{3}{2},4]$<span>.</span></p>    "
+            },
+            {
+              "id": 64367,
+              "content": "    <p style=\"; line-height: 2em;\">$(-\\infty ,\\frac{3}{2})$</p>    "
+            },
+            {
+              "id": 64368,
+              "content": "    <p style=\"; line-height: 2em;\">$[\\frac{3}{2},+\\infty ]$</p>    "
+            },
+            {
+              "id": 64369,
+              "content": "    <p style=\"; line-height: 2em;\">$(-1,\\frac{3}{2})$</p>    "
+            }
+          ],
+          "your_answers": []
+        }
+      ]
+    }
+  ],
+  "type": "online_quiz",
+  "time": 100,
+  "passing_score": 60,
+  "total_score": 100
+}
