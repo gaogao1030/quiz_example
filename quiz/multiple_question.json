@@ -29,5 +29,7 @@
       "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>50</span></p>    "
     }
   ],
+  "is_finished": false,
+  "analysis": null,
   "your_answers": []
 }

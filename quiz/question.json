@@ -1,0 +1,31 @@
+{
+  "id": 1190007,
+  "is_true": false,
+  "need_explanation": null,
+  "is_marked": false,
+  "is_answered": false,
+  "title": "    <p style=\"; line-height: 2em;\">给定函数：<span>①</span>$y=\\sqrt{x}$，<span>②</span>$y={{\\log }_{\\tfrac{1}{2}}}\\left( x+1 \\right)$，<span>③</span>$y=\\left| x-1 \\right|$，<span>④</span>$y={{2}^{x+1}}$，其中在区间(0,1)上单调<img height=\"397\" id=\"rId8\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage1.png\" style=\"width:452pt;height:397.35pt\" width=\"452\">递减的函数<img height=\"322\" id=\"rId9\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage2.png\" style=\"width:455.35pt;height:322pt\" width=\"455\">的序号是</p>    <p style=\"; line-height: 2em;\"><span><img height=\"12\" id=\"rId10\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage3.png\" style=\"width:31.35pt;height:12pt\" width=\"31\"></span><span><span style=\"white-space:pre-wrap;\"> </span></span><span>a</span><span style=\"\">∈</span><span>b</span><span style=\"\"><img height=\"14\" id=\"rId12\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F6a65e564-751e-4001-b50a-bf4d57f1a34cimage4.png\" style=\"width:33.35pt;height:14pt\" width=\"33\"></span></p>    ",
+  "score": 0,
+  "question_type_id": 1,
+  "is_finished": false,
+  "analysis": null,
+  "answers": [
+    {
+      "id": 64335,
+      "content": "    <p style=\"; line-height: 2em;\"><span>②③</span></p>    "
+    },
+    {
+      "id": 64336,
+      "content": "    <p style=\"; line-height: 2em;\"><span>①②</span></p>    "
+    },
+    {
+      "id": 64337,
+      "content": "    <p style=\"; line-height: 2em;\"><span>③④</span></p>    "
+    },
+    {
+      "id": 64338,
+      "content": "    <p style=\"; line-height: 2em;\"><span>①④</span></p>    "
+    }
+  ],
+  "your_answers": []
+}

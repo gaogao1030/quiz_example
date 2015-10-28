@@ -8,5 +8,7 @@
   "score": 0,
   "question_type_id": 3,
   "answers": [],
-  "your_answers": ["aaa","bbbb"]
+  "your_answers": ["aaa","bbbb"],
+  "is_finished": false,
+  "analysis": null
 }

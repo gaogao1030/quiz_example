@@ -1,11 +1,12 @@
 $(function(){
   setAnswer = function(obj){
+    console.log(JSON.stringify(obj))
     console.log(obj);
   }
-  urls=['/multiple_question.json','/question.json','/fill_question.json']
+  urls=['/multiple_question.json','/question.json','/fill_question.json','/table.json']
   var i = window.location.hash
   i=i.slice(1,2)
-  $.get(urls[i],function(quiz,state,response){
+  $.get("./"+urls[i],function(quiz,state,response){
     if(quiz.question_type_id == 1){ //处理单选题
       (function(quiz){
         var temp = $("#singleAnswerTemplate").html();
