@@ -20,11 +20,19 @@
       <ol>
         <% _.each(answers,function(answer,index){ %>
           <li data-id="<%=answer.id%>">
-            <input data-index="<%= index %>" data-question="<%= id %>" type="radio" name="answer" aria-label="..."></input>
             <%= answer.content %>
+            <input data-index="<%= index %>" data-question="<%= id %>" type="radio" name="answer" aria-label="..."></input>
           </li>
         <%})%>
       </ol>
+      <div class="analaysis">
+        <h3 class="blue">【解析】</h3>
+        <% if(need_explanation){ %>
+          <%= analysis %>
+        <% }else{ %>
+          该试题没有解析
+        <%} %>
+      </div>
       <script type="text/javascript">
         $('input').iCheck({
           checkboxClass: "icheckbox_flat-blue",
@@ -54,8 +62,8 @@
       <ol>
         <% _.each(answers,function(answer,index){ %>
           <li data-id="<%=answer.id%>">
-            <input data-index="<%= index %>" data-question="<%= id %>" type="checkbox" name="answer" aria-label="..."></input>
             <%= answer.content %>
+            <input data-index="<%= index %>" data-question="<%= id %>" type="checkbox" name="answer" aria-label="..."></input>
           </li>
         <%})%>
       </ol>
