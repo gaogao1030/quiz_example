@@ -13,7 +13,7 @@
   <body>
     <div id="app"></div>
     <script type="text/template" id="singleAnswerTemplate">
-      <h3>单选题</h3>
+      <h3 class="blue">单选题</h3>
       <div class="title">
         <%= title %>
       </div>
@@ -31,10 +31,23 @@
           radioClass: 'iradio_flat-blue'
         })
       </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+    </script>
+    <script src="./bower_components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script>
     </script>
 
     <script type="text/template" id="multipleAnswerTemplate">
-      <h3>多选题</h3>
+      <h3 class="blue">多选题</h3>
       <div class="title">
         <%= title %>
       </div>
@@ -55,11 +68,11 @@
     </script>
 
     <script type="text/template" id="fillAnswerTemplate">
-      <h3>填空题</h3>
+      <h3 class="blue">填空题</h3>
       <div class="title">
         <%= title %>
       </div>
-      <ol style="list-style-type:decimal;">
+      <ol class="fill" style="list-style-type:decimal;">
         <% _.each(your_answers,function(content,index){ %>
           <li>
             <input class="underline" data-index="<%= index %>" data-question="<%= id %>" name="answer" aria-label="..." value="<%= content %>"></input>
@@ -69,4 +82,3 @@
     </script>
   </body>
 </html>
-

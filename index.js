@@ -3,7 +3,9 @@ $(function(){
     console.log(obj);
   }
   urls=['/multiple_question.json','/question.json','/fill_question.json']
-  $.get(urls[2],function(quiz,state,response){
+  var i = window.location.hash
+  i=i.slice(1,2)
+  $.get(urls[i],function(quiz,state,response){
     if(quiz.question_type_id == 1){ //处理单选题
       (function(quiz){
         var temp = $("#singleAnswerTemplate").html();
@@ -53,7 +55,11 @@ $(function(){
         var compiled_template = _.template(temp)(quiz);
         $("#app").append(compiled_template);
         $("input").on("change",function(e){
-          debugger
+          var index = $(this).data("index");
+          var question_id = $(this).data("question")
+          var answers = quiz.your_answers
+          answers[index] = this.value
+          setAnswer({question_id:question_id,answer_index: answers});
         })
       })(quiz)
     }
