@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1;">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/underscore/underscore-min.js"></script>
+    <script src="../bower_components/icheck/icheck.min.js"></script>
+    <script src="./index.js"></script>
+    <link href="../bower_components/icheck/skins/flat/blue.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/template" id="singleAnswerTemplate">
+      <h3 class="blue">单选题</h3>
+      <div class="title">
+        <%= title %>
+      </div>
+      <ol>
+        <% _.each(answers,function(answer,index){ %>
+          <li data-id="<%=answer.id%>">
+            <input data-index="<%= index %>" data-question="<%= id %>" type="radio" name="answer" aria-label="..."></input>
+            <%= answer.content %>
+          </li>
+        <%})%>
+      </ol>
+      <script type="text/javascript">
+        $('input').iCheck({
+          checkboxClass: "icheckbox_flat-blue",
+          radioClass: 'iradio_flat-blue'
+        })
+      </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+    </script>
+    <script src="http://785ixb.com1.z0.glb.clouddn.com/mathjax/2.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script>
+    </script>
+
+    <script type="text/template" id="multipleAnswerTemplate">
+      <h3 class="blue">多选题</h3>
+      <div class="title">
+        <%= title %>
+      </div>
+      <ol>
+        <% _.each(answers,function(answer,index){ %>
+          <li data-id="<%=answer.id%>">
+            <input data-index="<%= index %>" data-question="<%= id %>" type="checkbox" name="answer" aria-label="..."></input>
+            <%= answer.content %>
+          </li>
+        <%})%>
+      </ol>
+      <script type="text/javascript">
+        $('input').iCheck({
+          checkboxClass: "icheckbox_flat-blue",
+          radioClass: 'icheckbox_flat-blue'
+        })
+      </script>
+    </script>
+
+    <script type="text/template" id="fillAnswerTemplate">
+      <h3 class="blue">填空题</h3>
+      <div class="title">
+        <%= title %>
+      </div>
+      <ol class="fill" style="list-style-type:decimal;">
+        <% _.each(your_answers,function(content,index){ %>
+          <li>
+            <input class="underline" data-index="<%= index %>" data-question="<%= id %>" name="answer" aria-label="..." value="<%= content %>"></input>
+          </li>
+        <%})%>
+      </ol>
+    </script>
+  </body>
+</html>
