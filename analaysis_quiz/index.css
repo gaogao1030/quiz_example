@@ -17,6 +17,12 @@ ol > li > .right {
   top: 8px;
 }
 
+ol > li > .right.fill {
+  position: absolute;
+  left:0;
+  top: 0;
+}
+
 .iradio_flat-blue,.icheckbox_flat-blue {
   position: absolute !important;
   left: 50px;
@@ -31,13 +37,16 @@ input.underline:focus {
   outline:none;
   border-bottom:1px solid #000;
 }
+input.underline[disabled]{
+  background-color:#fff
+}
 
 h3.blue {
   color: #4a90e2;
 }
 
 ol.fill>li {
-  padding-left:0;
+  padding-left:50px;
 }
 
 table {

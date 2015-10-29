@@ -10,9 +10,9 @@
   "question_type_id": 3,
   "answers": [],
   "your_answers": [
-    ""
+    "我是错误答案","正确"
   ],
   "right_answers": [
-    "1"
+    "1","正确"
   ]
 }
