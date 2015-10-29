@@ -26,13 +26,20 @@ ul > li >.iradio_flat-blue,.icheckbox_flat-blue {
 ol > li > .right {
   position: absolute;
   left:0;
-  top: 8px;
+  top: 0px;
+}
+
+
+ol > li > .right.single {
+  position: absolute;
+  left:0;
+  top: 6px;
 }
 
 ul > li > .right {
   position: absolute;
   left:0;
-  top: 2px;
+  top: 0px;
 }
 
 ol > li > .right.fill {

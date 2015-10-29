@@ -31,7 +31,7 @@ $(function(){
         var $your_answer = $($("input")[your_answer_index]);
         $your_answer.iCheck('check');
         $right_answer = $($("input")[right_answer_index]);
-        $right_answer.parents("li").append("<div class='right'>right</div>")
+        $right_answer.parents("li").append("<div class='right single'>right</div>")
       })(quiz)
     }
     else if(quiz.question_type_id == 2){ //处理单选题
