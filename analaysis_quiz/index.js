@@ -14,7 +14,7 @@ $(function(){
     }
     return obj;
   }
-  urls=['/singleQuestion.json','/multipleQuestion.json','/fillQuestion.json']
+  urls=['/singleQuestion.json','/multipleQuestion.json','/fillQuestion.json','/judgementQuestion.json']
   var i = window.location.hash
   i=i.slice(1,2)
   $.get("./"+urls[i],function(quiz,state,response){
@@ -70,14 +70,29 @@ $(function(){
         _.each(right_answers,function(elem){
           $(elem).parents("li").append("<div class='right fill'>right</div>");
         })
-
-        $("input").on("change",function(e){
-          var index = $(this).data("index");
-          var question_id = $(this).data("question");
-          var answers = quiz.your_answers;
-          answers[index] = this.value;
-          setAnswer({question_id:question_id,answer_index: answers});
-        })
+      })(quiz)
+    }
+    else if(quiz.question_type_id == 6){ //处理判断题
+      //your_answer确定有多少空需要填写
+      (function(quiz){
+        var temp = $("#judgementAnswerTemplate").html();
+        var compiled_template = _.template(temp)(quiz);
+        $("#app").append(compiled_template);
+        $("input").attr("disabled",true);
+        var your_answer = quiz.your_answers[0];
+        var right_answer = quiz.right_answers[0];
+        $T = $("input[data-answer='T']");
+        $F = $("input[data-answer='F']");
+        if(your_answer=="T"){
+          $T.iCheck('check');
+        } else if(your_answer=="F") {
+          $F.iCheck('check');
+        }
+        if(right_answer=="T"){
+          $T.parents("li").append("<div class='right'>right</div>");
+        } else if(your_answer=="F") {
+          $F.parents("li").append("<div class='right'>right</div>");
+        }
       })(quiz)
     }
     else
