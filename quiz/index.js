@@ -21,7 +21,7 @@ $(function(){
   }
   //var quiz = getQuestion() //android
   //quiz = jsGetQuestion(quiz) //android
-  urls=['/multiple_question.json','/question.json','/fill_question.json','/table.json']
+  urls=['/singleQuestion.json','/multipleQuestion.json','/fillQuestion.json','/judgementQuestion.json']
   var i = window.location.hash
   i=i.slice(1,2)
   $.get("./"+urls[i],function(quiz,state,response){
@@ -81,6 +81,29 @@ $(function(){
           answers[index] = this.value
           jsSetAnswer({question_type_id:quiz.question_type_id,question_id:question_id,answer_index: answers});
         })
+      })(quiz)
+    }
+    else if(quiz.question_type_id == 6){ //处理判断题
+      (function(quiz){
+        var temp = $("#judgementAnswerTemplate").html();
+        var compiled_template = _.template(temp)(quiz);
+        $("#app").append(compiled_template);
+        $('input').on("ifChecked",function(event){
+          var answer = $(this).data("answer");
+          var answer = [answer];
+          var question_id = $(this).data("question")
+          jsSetAnswer({question_type_id:quiz.question_type_id,question_id:question_id,answer_index: answer});
+        });
+        if(quiz.your_answers.length !== 0){
+          var your_answer = quiz.your_answers[0];
+          $T = $("input[data-answer='T']");
+          $F = $("input[data-answer='F']");
+          if(your_answer=="T"){
+            $T.iCheck('check');
+          } else if(your_answer=="F") {
+            $F.iCheck('check');
+          }
+        }
       })(quiz)
     }
     else

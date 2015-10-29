@@ -12,6 +12,19 @@
   </head>
   <body>
     <div id="app"></div>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+    </script>
+    <script src="http://785ixb.com1.z0.glb.clouddn.com/mathjax/2.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script>
     <script type="text/template" id="singleAnswerTemplate">
       <h3 class="blue">单选题</h3>
       <div class="title">
@@ -31,19 +44,6 @@
           radioClass: 'iradio_flat-blue'
         })
       </script>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-      extensions: ["tex2jax.js"],
-      jax: ["input/TeX", "output/HTML-CSS"],
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true
-      },
-     "HTML-CSS": { availableFonts: ["TeX"] }
-    });
-    </script>
-    <script src="http://785ixb.com1.z0.glb.clouddn.com/mathjax/2.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script>
     </script>
 
     <script type="text/template" id="multipleAnswerTemplate">
@@ -79,6 +79,29 @@
           </li>
         <%})%>
       </ol>
+    </script>
+
+    <script type="text/template" id="judgementAnswerTemplate">
+      <h3 class="blue">判断题</h3>
+      <div class="title">
+        <%= title %>
+      </div>
+      <ul style="padding-left:0;">
+        <li>
+          <input data-answer="T" data-question="<%= id %>" type="radio" name="answer" aria-label="..."></input>
+          <span><p>真/T</p></span>
+        </li>
+        <li>
+          <input data-answer="F" data-question="<%= id %>" type="radio" name="answer" aria-label="..."></input>
+          <span><p>假/F</p></span>
+        </li>
+      </ol>
+      <script type="text/javascript">
+        $('input').iCheck({
+          checkboxClass: "icheckbox_flat-blue",
+          radioClass: 'iradio_flat-blue'
+        })
+      </script>
     </script>
   </body>
 </html>
