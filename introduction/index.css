@@ -1,0 +1,16 @@
+body {
+  font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simhei,"黑体";
+  margin:0;
+}
+
+#app {
+  padding:10px 32px;
+}
+
+.title img {max-width:100% !important; height: auto !important;}
+
+table {
+  max-width: 100% !important;
+  width: auto !important;
+}
+

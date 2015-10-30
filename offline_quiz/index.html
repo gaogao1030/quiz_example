@@ -37,27 +37,33 @@
           </li>
         <%})%>
       </ol>
-      <div class="analaysis">
-        <h3 class="blue">【答案】</h3>
-        <% if(question_type_id == 3|| question_type_id ==4){ %>
-          <ul>
-            <% _.each(right_answers,function(content){ %>
-              <li><%= content %></li>
-            <% }) %>
-          </ul>
-        <% }else{ %>
-          <%= right_answers %>
-        <% } %>
-        <h3 class="blue">【解析】</h3>
-        <%= analysis %>
-        <div>
-          <p style="display:inline-block;vertical-align:middle;">你做对了吗？</p>
-          <span style="position:relative;vertical-align:middle;">
-            <img style="vertical-align:middle;" class="icon right unclick" src="../images/right.png"></img>
-            <img style="vertical-align:middle;" class="icon right click hidden" src="../images/click_right.png"></img>
-            <img style="vertical-align:middle;" id="" class="icon wrong unclick" src="../images/wrong.png"></img>
-            <img style="vertical-align:middle;" id="" class="icon wrong click hidden" src="../images/click_wrong.png"></img>
-          </span>
+      <div style="position:relative">
+        <div class="view-analaysis">
+          <img style="width:25px;" src="../images/offline_dot.png"></img>
+          查看解析
+        </div>
+        <div class="analaysis blur">
+          <h3 class="blue">【答案】</h3>
+          <% if(question_type_id == 3|| question_type_id ==4){ %>
+            <ul>
+              <% _.each(right_answers,function(content){ %>
+                <li><%= content %></li>
+              <% }) %>
+            </ul>
+          <% }else{ %>
+            <%= right_answers %>
+          <% } %>
+          <h3 class="blue">【解析】</h3>
+          <%= analysis %>
+          <div>
+            <p style="display:inline-block;vertical-align:middle;">你做对了吗？</p>
+            <span style="position:relative;vertical-align:middle;">
+              <img style="vertical-align:middle;" class="icon right unclick" src="../images/right.png"></img>
+              <img style="vertical-align:middle;" class="icon right click hidden" src="../images/click_right.png"></img>
+              <img style="vertical-align:middle;" id="" class="icon wrong unclick" src="../images/wrong.png"></img>
+              <img style="vertical-align:middle;" id="" class="icon wrong click hidden" src="../images/click_wrong.png"></img>
+            </span>
+          </div>
         </div>
       </div>
       <script type="text/javascript">
