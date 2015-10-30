@@ -34,12 +34,10 @@ $(function(){
       $(".icon.unclick.right").removeClass("hidden");
       jsSetTorF({question_id:quiz.id,answer_index:["F"]});
     })
-    //$(".analaysis").on("click",function(){
-    //  $(this).removeClass('blur');
-    //  $(".view-analaysis").addClass("hidden");
-    //})
-      $(".analaysis").removeClass('blur');
+    $(".analaysis").on("click",function(){
+      $(this).removeClass('blur');
       $(".view-analaysis").addClass("hidden");
+    })
   })
 
   var letter=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
