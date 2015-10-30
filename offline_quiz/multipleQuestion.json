@@ -1,0 +1,40 @@
+{
+  "id": 1189997,
+  "is_true": false,
+  "need_explanation": true,
+  "is_marked": false,
+  "is_answered": false,
+  "title": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span>三角形</span><span>ABC</span><span>中，角</span><span>A=25</span><span>度，角</span><span>B</span><span>大于</span><span>90</span><span>度，则角</span><span>C</span><span>可能的度数是？</span></p>    ",
+  "score": 0,
+  "analysis": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span>三角形内角和未</span><span>180</span><span>度，则角</span><span>C<span>即∠</span><span>C<span>。</span></span></span></p>    ",
+  "question_type_id": 2,
+  "answers": [
+    {
+      "id": 64269,
+      "content": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span style=\"\">70</span><span><span style=\"white-space:pre-wrap;\"> </span></span><span style=\"\"><span style=\"white-space:pre-wrap;\"> </span></span><span><span style=\"white-space:pre-wrap;\"> </span></span></p>    "
+    },
+    {
+      "id": 64270,
+      "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>12</span><span><span style=\"white-space:pre-wrap;\">  </span></span></p>    "
+    },
+    {
+      "id": 64271,
+      "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>15</span><span><span style=\"white-space:pre-wrap;\">  </span></span></p>    "
+    },
+    {
+      "id": 64272,
+      "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>45</span><span><span style=\"white-space:pre-wrap;\">  </span></span></p>    "
+    },
+    {
+      "id": 64273,
+      "content": "    <p style=\"text-align: left;; margin-top:0cm; ; line-height: 2em;\"><span>50</span></p>    "
+    }
+  ],
+  "your_answers": [1,2],
+  "right_answers": [
+    2,
+    3,
+    4,
+    5
+  ]
+}

@@ -34,7 +34,7 @@ $(function(){
         $right_answer.parents("li").append("<div class='right single'>right</div>")
       })(quiz)
     }
-    else if(quiz.question_type_id == 2){ //处理单选题
+    else if(quiz.question_type_id == 2){ //处理多选题
       (function(quiz){
         var temp = $("#multipleAnswerTemplate").html();
         var compiled_template = _.template(temp)(quiz);
@@ -73,7 +73,6 @@ $(function(){
       })(quiz)
     }
     else if(quiz.question_type_id == 6){ //处理判断题
-      //your_answer确定有多少空需要填写
       (function(quiz){
         var temp = $("#judgementAnswerTemplate").html();
         var compiled_template = _.template(temp)(quiz);

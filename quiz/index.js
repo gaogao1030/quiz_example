@@ -44,7 +44,7 @@ $(function(){
         }
       })(quiz)
     }
-    else if(quiz.question_type_id == 2){ //处理单选题
+    else if(quiz.question_type_id == 2){ //处理多选题
       (function(quiz){
         var temp = $("#multipleAnswerTemplate").html();
         var compiled_template = _.template(temp)(quiz);
