@@ -1,15 +1,15 @@
 
 ol {padding:0;list-style-type:upper-alpha;list-style-position: inside;}
-ol > li {padding-left:80px;position:relative;}
-ul > li {padding-left:80px;position:relative;list-style-type:none;}
-ol > li > .iradio_flat-blue,.icheckbox_flat-blue {
+ol > li {padding-left:70px;position:relative;}
+ul > li {padding-left:70px;position:relative;list-style-type:none;}
+ol > li > .iradio_flat-youyu,.icheckbox_flat-youyu {
   position: absolute !important;
-  left: 50px;
+  left: 40px;
   top: 8px;
 }
-ul > li >.iradio_flat-blue,.icheckbox_flat-blue {
+ul > li >.iradio_flat-youyu,.icheckbox_flat-youyu {
   position: absolute !important;
-  left: 50px;
+  left: 40px;
   top: 2px;
 }
 
@@ -42,7 +42,15 @@ h3.blue {
 }
 
 ol.fill>li {
-  padding-left:50px;
+  padding-left:40px;
   list-style-type: none;
   margin-top: 10px;
+}
+
+.single-youyu {
+  margin-top: -2px;
+}
+
+.multiple-youyu {
+  margin-top: 4px;
 }

@@ -47,7 +47,7 @@ $(function(){
           return $("input")[answer_index];
         });
         var right_answers = _.each(right_answers_index,function(answer_index){
-          $($("input")[answer_index]).parents("li").append("<div class='right'><img src='../images/right1.png'></img></div>");
+          $($("input")[answer_index]).parents("li").append("<div class='right' style='margin-top:6px;'><img src='../images/right1.png'></img></div>");
         });
         $(your_answers).iCheck("check");
       })(quiz)
