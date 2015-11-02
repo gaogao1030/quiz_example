@@ -1,0 +1,40 @@
+body {
+  font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,simhei,"黑体";
+  margin:0;
+}
+
+ol {list-style-type:upper-alpha;}
+
+#app {
+  padding:10px 32px;
+}
+
+.title img {max-width:100% !important; height: auto !important;}
+
+table {
+  max-width: 100% !important;
+  width: auto !important;
+}
+
+h3.blue {
+  color: #4a90e2;
+}
+
+.hidden {
+  display:none;
+}
+
+.analaysis {
+  border-top: 2px solid #eee;
+}
+
+.blur {
+  -webkit-filter: blur(8px);
+  -moz-filter:blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+}
+
+.right img{
+  width: 26px;
+}

@@ -5,7 +5,9 @@ $(function(){
         return i+1;
       })
     }
-    obj.answer_index = obj.answer_index.sort();
+    if(obj.question_type_id == 2){
+      obj.answer_index = obj.answer_index.sort();
+    }
     console.log(JSON.stringify(obj))
     console.log(obj);
     //obj=JSON.stringify(obj) //android
@@ -74,7 +76,8 @@ $(function(){
         var temp = $("#fillAnswerTemplate").html();
         var compiled_template = _.template(temp)(quiz);
         $("#app").append(compiled_template);
-        $("input").on("change",function(e){
+        var answers = []
+        $(".fill input").on("change",function(e){
           var index = $(this).data("index");
           var question_id = $(this).data("question")
           var answers = quiz.your_answers

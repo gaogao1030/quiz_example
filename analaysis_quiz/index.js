@@ -31,7 +31,7 @@ $(function(){
         var $your_answer = $($("input")[your_answer_index]);
         $your_answer.iCheck('check');
         $right_answer = $($("input")[right_answer_index]);
-        $right_answer.parents("li").append("<div class='right single'>right</div>")
+        $right_answer.parents("li").append("<div class='right single'><img src='../images/right1.png'></img></div>")
       })(quiz)
     }
     else if(quiz.question_type_id == 2){ //处理多选题
@@ -47,7 +47,7 @@ $(function(){
           return $("input")[answer_index];
         });
         var right_answers = _.each(right_answers_index,function(answer_index){
-          $($("input")[answer_index]).parents("li").append("<div class='right'>right</div>");
+          $($("input")[answer_index]).parents("li").append("<div class='right'><img src='../images/right1.png'></img></div>");
         });
         $(your_answers).iCheck("check");
       })(quiz)
@@ -68,7 +68,7 @@ $(function(){
         })
         right_answers = _.compact(right_answers);
         _.each(right_answers,function(elem){
-          $(elem).parents("li").append("<div class='right fill'>right</div>");
+          $(elem).parents("li").append("<div class='right fill'><img src='../images/right1.png'></img></div>");
         })
       })(quiz)
     }
@@ -88,9 +88,9 @@ $(function(){
           $F.iCheck('check');
         }
         if(right_answer=="T"){
-          $T.parents("li").append("<div class='right'>right</div>");
-        } else if(your_answer=="F") {
-          $F.parents("li").append("<div class='right'>right</div>");
+          $T.parents("li").append("<div class='right'><img src='../images/right1.png'></img></div>");
+        } else if(right_answer=="F") {
+          $F.parents("li").append("<div class='right'><img src='../images/right1.png'></img></div>");
         }
       })(quiz)
     }

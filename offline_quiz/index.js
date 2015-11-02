@@ -34,8 +34,8 @@ $(function(){
       $(".icon.unclick.right").removeClass("hidden");
       jsSetTorF({question_id:quiz.id,answer_index:["F"]});
     })
-    $(".analaysis").on("click",function(){
-      $(this).removeClass('blur');
+    $(".analaysis,.view-analaysis").on("click",function(){
+      $('.analaysis > .blur').removeClass('blur');
       $(".view-analaysis").addClass("hidden");
     })
   })
