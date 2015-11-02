@@ -10,8 +10,7 @@
     <link href="../bower_components/icheck/skins/flat/blue.css" rel="stylesheet">
     <link href="../base.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
-  </head>
-  <body>
+  </head> <body>
     <div id="app"></div>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -49,8 +48,11 @@
         <h3 class="blue">【答案】</h3>
         <% if(question_type_id == 3|| question_type_id ==4){ %>
           <ul>
-            <% _.each(right_answers,function(content){ %>
-              <li><%= content %></li>
+            <% _.each(right_answers,function(content,index){ %>
+              <li style="margin: 8px 0;">
+                <span class="circle-font" style="margin-right:10px;"><%= index+1 %></span>
+                <%= content %>
+              </li>
             <% }) %>
           </ul>
         <% }else{ %>

@@ -91,16 +91,21 @@
       </div>
       <ol class="fill" style="list-style-type:decimal;">
         <% _.each(your_answers,function(content,index){ %>
-          <li>
+          <li style="margin: 8px 0;">
+            <span class="circle-font" style="margin-right:10px;"><%= index+1 %></span>
             <input class="underline" data-index="<%= index %>" data-question="<%= id %>" name="answer" aria-label="..." value="<%= content %>"></input>
           </li>
         <%})%>
       </ol>
       <div class="analaysis">
         <h3 class="blue">【答案】</h3>
-        <% _.each(right_answers,function(ra,index){ %>
-          <%= index+1 %>.<%= ra%></br>
-        <% })%>
+        <ol class="fill">
+          <% _.each(right_answers,function(content,index){ %>
+            <li style="margin: 8px 0; padding-left:0px;">
+              <span class="circle-font" style="margin-right:10px;"><%= index+1 %></span>
+              <%= content %>
+            </li>
+          <% })%>
         <h3 class="blue">【解析】</h3>
         <% if(need_explanation){ %>
           <%= analysis %>
