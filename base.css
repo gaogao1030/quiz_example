@@ -67,3 +67,12 @@ input.underline[disabled]{
   background-color:#fff;
   line-height:2;
 }
+
+
+.icheckbox_flat-blue.disabled {
+    background-position: 0 0;
+    cursor: default;
+}
+.icheckbox_flat-blue.checked.disabled {
+    background-position: -22px 0;
+}

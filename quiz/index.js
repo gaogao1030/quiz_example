@@ -65,8 +65,12 @@ $(function(){
           jsSetAnswer({question_type_id:quiz.question_type_id,question_id:question_id,answer_index: answers});
         });
         if(quiz.your_answers.length !== 0){
+          var your_answers_index= quiz.your_answers;
           var index = quiz.your_answers[0];
-          $($("input")[index]).iCheck('check');
+        var your_answers = _.map(your_answers_index,function(answer_index){
+          return $("input")[answer_index];
+        });
+          $(your_answers).iCheck('check');
         }
       })(quiz)
     }
