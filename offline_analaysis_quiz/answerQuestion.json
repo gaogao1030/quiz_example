@@ -1,0 +1,18 @@
+{
+  "id": 1190003,
+  "is_true": false,
+  "need_explanation": true,
+  "is_marked": false,
+  "is_answered": false,
+  "title": "    <p style=\"; line-height: 2em;\">已知函数f(x)在定义域(－1,1)内单调递减，则满足<img height=\"19\" id=\"rId15\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F3cd57b94-861f-4e4d-8291-ace01f5e6f01image6.png\" style=\"width:94.65pt;height:19.35pt\" width=\"95\">的实数a的取值范围为<span>(0,</span>_____<span>)</span>．</p>    ",
+  "score": 0,
+  "analysis": "    <p style=\"; line-height: 2em;\">由题意可知<img height=\"49\" id=\"rId16\" src=\"http://78rc7b.com1.z0.glb.clouddn.com/Hux7D8eudyUh%2Fquiz_pictures%2F3cd57b94-861f-4e4d-8291-ace01f5e6f01image7.png\" style=\"width:77.35pt;height:49.35pt\" width=\"77\"><span><span style=\"white-space:pre-wrap;\"> </span></span>解之得0＜a＜1</p>    <p style=\"; line-height: 2em;\"> </p>    ",
+  "question_type_id": 4,
+  "answers": [],
+  "your_answers": [
+    "我是错误答案","正确"
+  ],
+  "right_answers": [
+    "1","正确"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": 1190132,
+  "is_true": true,
+  "need_explanation": true,
+  "is_marked": false,
+  "is_answered": true,
+  "title": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span>五边形的内角和为</span><span>450</span><span>度。</span></p>    ",
+  "score": 0,
+  "analysis": "    <p style=\"; margin-top:0cm; ; line-height: 2em;\"><span>540</span><span>度。多边形内角和公式</span><span>:180*(n-2)</span></p>    ",
+  "question_type_id": 6,
+  "answers": [],
+  "your_answers": [
+    "F"
+  ],
+  "right_answers": [
+    "F"
+  ]
+}

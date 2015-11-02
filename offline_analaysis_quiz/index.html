@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1;">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/underscore/underscore-min.js"></script>
+    <script src="../bower_components/icheck/icheck.min.js"></script>
+    <script src="./index.js"></script>
+    <link href="../bower_components/icheck/skins/flat/blue.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+    </script>
+    <script src="http://785ixb.com1.z0.glb.clouddn.com/mathjax/2.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script>
+    <script type="text/template" id="offlineTemplate">
+    <h3 class="blue"><%= question_type %></h3>
+      <div class="title">
+        <%= title %>
+      </div>
+      <ol>
+        <% _.each(answers,function(answer,index){ %>
+          <li data-id="<%=answer.id%>">
+            <%= answer.content %>
+          </li>
+        <%})%>
+      </ol>
+      <div class="result">
+        <% if(is_true){ %>
+          <img src="../images/right1.png">
+        <% } else {%>
+          <img src="../images/wrong1.png">
+        <% } %>
+      </div>
+      <div class="analaysis">
+        <h3 class="blue">【答案】</h3>
+        <% if(question_type_id == 3|| question_type_id ==4){ %>
+          <ul>
+            <% _.each(right_answers,function(content){ %>
+              <li><%= content %></li>
+            <% }) %>
+          </ul>
+        <% }else{ %>
+          <%= right_answers %>
+        <% } %>
+        <h3 class="blue">【解析】</h3>
+        <%= analysis %>
+      </div>
+      <script type="text/javascript">
+        $('input').iCheck({
+          checkboxClass: "icheckbox_flat-blue",
+          radioClass: 'iradio_flat-blue'
+        })
+      </script>
+    </script>
+
+  </body>
+</html>
