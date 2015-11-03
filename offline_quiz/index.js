@@ -8,17 +8,25 @@ $(function(){
   }
 
   jsGetQuestion = function(obj){
-    if(obj.question_type_id == 1 || obj.question_type_id== 2) {
-      obj.your_answers =_.map(obj.your_answers,function(i){
-        return i-1;
-      })
-      obj.right_answers =_.map(obj.right_answers,function(i){
-        return i-1;
-      })
-    }
     return obj;
   }
 
+  setYourAnswer = function(quiz){
+    var your_answers = quiz.your_answers;
+    if(your_answers.length!==0){
+      if(your_answers[0]==""){
+        $(".analaysis,.view-analaysis").trigger("click");
+      } else if(your_answers[0]=="T"){
+        $(".analaysis,.view-analaysis").trigger("click");
+        $(".icon.right.unclick").trigger("click");
+      } else if(your_answers[0]=="F"){
+        $(".analaysis,.view-analaysis").trigger("click");
+        $(".icon.wrong.unclick").trigger("click");
+      } else {
+        console.log("错误的格式");
+      }
+    }
+  }
 
   $("body").on("rendered",function(e,quiz){
     var quiz = quiz
@@ -26,13 +34,13 @@ $(function(){
       $(".icon").addClass("hidden");
       $(".icon.click.right").removeClass("hidden");
       $(".icon.unclick.wrong").removeClass("hidden");
-      jsSetTorF({question_id:quiz.id,answer_index:["T"]});
+      jsSetTorF({question_type_id:quiz.question_type_id,question_id:quiz.id,answer_index:["T"]});
     })
     $(".icon.wrong.unclick").on("click",function(){
       $(".icon").addClass("hidden");
       $(".icon.click.wrong").removeClass("hidden");
       $(".icon.unclick.right").removeClass("hidden");
-      jsSetTorF({question_id:quiz.id,answer_index:["F"]});
+      jsSetTorF({question_type_id:quiz.question_type_id,question_id:quiz.id,answer_index:["F"]});
     })
     $(".analaysis,.view-analaysis").on("click",function(){
       $('.analaysis > .blur').removeClass('blur');
@@ -58,6 +66,7 @@ $(function(){
         $("#app").append(compiled_template);
         $("body").trigger("rendered",quiz);
         $("input").attr("disabled",true);
+        setYourAnswer(quiz);
       })(quiz)
     }
     else if(quiz.question_type_id == 2){ //处理多选题
@@ -76,6 +85,7 @@ $(function(){
         $("#app").append(compiled_template);
         $("body").trigger("rendered",quiz);
         $("input").attr("disabled",true);
+        setYourAnswer(quiz);
       })(quiz)
     }
     else if(quiz.question_type_id == 3){ //处理填空题
@@ -87,6 +97,7 @@ $(function(){
         $("#app").append(compiled_template);
         $("body").trigger("rendered",quiz);
         $("input").attr("disabled",true);
+        setYourAnswer(quiz);
       })(quiz)
     }
     else if(quiz.question_type_id == 4){ //处理填空题
@@ -98,6 +109,7 @@ $(function(){
         $("#app").append(compiled_template);
         $("body").trigger("rendered",quiz);
         $("input").attr("disabled",true);
+        setYourAnswer(quiz);
       })(quiz)
     }
     else if(quiz.question_type_id == 6){ //处理判断题
@@ -108,6 +120,7 @@ $(function(){
         $("#app").append(compiled_template);
         $("body").trigger("rendered",quiz);
         $("input").attr("disabled",true);
+        setYourAnswer(quiz);
       })(quiz)
     }
     else
