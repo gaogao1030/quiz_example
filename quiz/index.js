@@ -21,6 +21,10 @@ $(function(){
     }
     return obj;
   }
+
+  jsTriggerinputChange = function(){
+    $(".fill input").trigger("change")
+  }
   //var quiz = getQuestion() //android
   //quiz = jsGetQuestion(quiz) //android
   urls=['/singleQuestion.json','/multipleQuestion.json','/fillQuestion.json','/judgementQuestion.json']
