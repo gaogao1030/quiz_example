@@ -45,6 +45,7 @@ $(function(){
     $(".analaysis,.view-analaysis").on("click",function(){
       $('.analaysis > .blur').removeClass('blur');
       $(".view-analaysis").addClass("hidden");
+      jsSetTorF({question_type_id:quiz.question_type_id,question_id:quiz.id,answer_index:[""]});
     })
   })
 

@@ -66,9 +66,19 @@ $(function(){
             return $("input")[index];
           }
         })
+        var wrong_answers = _.map(your_answers_content,function(content,index){
+          if(!(_.isEqual(content,right_answers_content[index]))){
+            return $("input")[index];
+          }
+        })
         right_answers = _.compact(right_answers);
+        wrong_answers = _.compact(wrong_answers);
+        debugger
         _.each(right_answers,function(elem){
           $(elem).parents("li").append("<div class='right fill'><img src='../images/right1.png'></img></div>");
+        })
+        _.each(wrong_answers,function(elem){
+          $(elem).parents("li").append("<div class='right fill'><img src='../images/wrong1.png'></img></div>");
         })
       })(quiz)
     }
