@@ -73,7 +73,6 @@ $(function(){
         })
         right_answers = _.compact(right_answers);
         wrong_answers = _.compact(wrong_answers);
-        debugger
         _.each(right_answers,function(elem){
           $(elem).parents("li").append("<div class='right fill'><img src='../images/right1.png'></img></div>");
         })
