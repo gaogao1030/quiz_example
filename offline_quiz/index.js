@@ -43,9 +43,11 @@ $(function(){
       jsSetTorF({question_type_id:quiz.question_type_id,question_id:quiz.id,answer_index:["F"]});
     })
     $(".analaysis,.view-analaysis").on("click",function(){
-      $('.analaysis > .blur').removeClass('blur');
-      $(".view-analaysis").addClass("hidden");
-      jsSetTorF({question_type_id:quiz.question_type_id,question_id:quiz.id,answer_index:[""]});
+      if(!$(".view-analaysis").hasClass("hidden")){
+        $('.analaysis > .blur').removeClass('blur');
+        $(".view-analaysis").addClass("hidden");
+        jsSetTorF({question_type_id:quiz.question_type_id,question_id:quiz.id,answer_index:[""]});
+      }
     })
   })
 
