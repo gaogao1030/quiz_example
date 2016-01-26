@@ -85,7 +85,7 @@ $(function(){
         var compiled_template = _.template(temp)(quiz);
         $("#app").append(compiled_template);
         var answers = []
-        $(".fill input").on("change",function(e){
+        $(".fill input").on("keydown",function(e){
           var index = $(this).data("index");
           var question_id = $(this).data("question")
           var answers = quiz.your_answers
